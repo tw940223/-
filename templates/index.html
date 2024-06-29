@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Comebuy Stores</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5">Comebuy Stores</h1>
+      <h2>店鋪資料</h2>
+      <div class="table-responsive">
+        {{ tables|safe }}
+      </div>
+      <h2>長條圖</h2>
+      <img src="data:image/png;base64,{{ bar_chart }}" alt="Bar Chart">
+      <h2>圓餅圖</h2>
+      <img src="data:image/png;base64,{{ pie_chart }}" alt="Pie Chart">
+    </div>
+  </body>
+</html>
+
